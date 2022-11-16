@@ -28,6 +28,8 @@ Dataset in folder `1` provided by MNC Portal for content tagging, text classific
 |_ IndonesiaCreditData.xlsx - dataset from Sinarmas Land (columns explanation included)
 ```
 
+You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_sample_challenge/blob/main/sample.ipynb).
+
 ### Data Fields
 
 Here's a brief version of what you'll find in the data description file.
