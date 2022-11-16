@@ -1,128 +1,77 @@
-# Hacktiv8 Talent Fair Sample Test
+# Hacktiv8 Talent Fair Vol. 2 Challenge
 
-> Hacktiv8 Academic Team
+> Hacktiv8 Team in collaboration with MNC Portal and Sinarmas Land
 ---
 
-## Test Brief Description
+## Challenge Brief Description
 
-Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Sinarmas Land and MNC Portal). The open positions at Sinarmas Land are Data Analyst Intern and MNC Portal currently looking for Data Scientist and Data Engineer.
 
-With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
+There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
-## Practice Skills
-
-- Creative feature engineering
-- Advanced regression techniques like random forest and gradient boosting
+There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available (DE, DS, DA), you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
 
 ## Acknowledgments
 
-The [Ames Housing dataset](http://jse.amstat.org/v19n3/decock.pdf) was compiled by Dean De Cock for use in data science education. It's an incredible alternative for data scientists looking for a modernized and expanded version of the often cited Boston Housing dataset.
+Dataset in folder `1` provided by MNC Portal for content tagging, text classification, and any other method you think suits the data well. Dataset in folder `2` provided by Sinarmas Land for risk modeling, segmentation, and any other method you think suits the data well also.
 
 ## Dataset Description
 
-### File descriptions
+### File Description
 
-- train.csv - the training set
-- test.csv - the test set
-- data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
-- sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
+```txt
+1
+|_ Dataset Dictionary.docx - contains columns explanation for final_dataset.csv
+|_ final_data.csv - dataset from MNC Portal
 
-### Data fields
+2
+|_ IndonesiaCreditData.xlsx - dataset from Sinarmas Land (columns explanation included)
+```
+
+### Data Fields
 
 Here's a brief version of what you'll find in the data description file.
 
-- SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
-- MSSubClass: The building class
-- MSZoning: The general zoning classification
-- LotFrontage: Linear feet of street connected to property
-- LotArea: Lot size in square feet
-- Street: Type of road access
-- Alley: Type of alley access
-- LotShape: General shape of property
-- LandContour: Flatness of the property
-- Utilities: Type of utilities available
-- LotConfig: Lot configuration
-- LandSlope: Slope of property
-- Neighborhood: Physical locations within Ames city limits
-- Condition1: Proximity to main road or railroad
-- Condition2: Proximity to main road or railroad (if a second is present)
-- BldgType: Type of dwelling
-- HouseStyle: Style of dwelling
-- OverallQual: Overall material and finish quality
-- OverallCond: Overall condition rating
-- YearBuilt: Original construction date
-- YearRemodAdd: Remodel date
-- RoofStyle: Type of roof
-- RoofMatl: Roof material
-- Exterior1st: Exterior covering on house
-- Exterior2nd: Exterior covering on house (if more than one material)
-- MasVnrType: Masonry veneer type
-- MasVnrArea: Masonry veneer area in square feet
-- ExterQual: Exterior material quality
-- ExterCond: Present condition of the material on the exterior
-- Foundation: Type of foundation
-- BsmtQual: Height of the basement
-- BsmtCond: General condition of the basement
-- BsmtExposure: Walkout or garden level basement walls
-- BsmtFinType1: Quality of basement finished area
-- BsmtFinSF1: Type 1 finished square feet
-- BsmtFinType2: Quality of second finished area (if present)
-- BsmtFinSF2: Type 2 finished square feet
-- BsmtUnfSF: Unfinished square feet of basement area
-- TotalBsmtSF: Total square feet of basement area
-- Heating: Type of heating
-- HeatingQC: Heating quality and condition
-- CentralAir: Central air conditioning
-- Electrical: Electrical system
-- 1stFlrSF: First Floor square feet
-- 2ndFlrSF: Second floor square feet
-- LowQualFinSF: Low quality finished square feet (all floors)
-- GrLivArea: Above grade (ground) living area square feet
-- BsmtFullBath: Basement full bathrooms
-- BsmtHalfBath: Basement half bathrooms
-- FullBath: Full bathrooms above grade
-- HalfBath: Half baths above grade
-- Bedroom: Number of bedrooms above basement level
-- Kitchen: Number of kitchens
-- KitchenQual: Kitchen quality
-- TotRmsAbvGrd: Total rooms above grade (does not include bathrooms)
-- Functional: Home functionality rating
-- Fireplaces: Number of fireplaces
-- FireplaceQu: Fireplace quality
-- GarageType: Garage location
-- GarageYrBlt: Year garage was built
-- GarageFinish: Interior finish of the garage
-- GarageCars: Size of garage in car capacity
-- GarageArea: Size of garage in square feet
-- GarageQual: Garage quality
-- GarageCond: Garage condition
-- PavedDrive: Paved driveway
-- WoodDeckSF: Wood deck area in square feet
-- OpenPorchSF: Open porch area in square feet
-- EnclosedPorch: Enclosed porch area in square feet
-- 3SsnPorch: Three season porch area in square feet
-- ScreenPorch: Screen porch area in square feet
-- PoolArea: Pool area in square feet
-- PoolQC: Pool quality
-- Fence: Fence quality
-- MiscFeature: Miscellaneous feature not covered in other categories
-- MiscVal: $Value of miscellaneous feature
-- MoSold: Month Sold
-- YrSold: Year Sold
-- SaleType: Type of sale
-- SaleCondition: Condition of sale
+`final_data.csv`
+
+- **viewers_id:** contained information about viewers_id. There are several ids using UN- and using dynamic number generated
+- **content_id:** contained information about content_id. The ids are using dynamic number generated
+- **hit_timestamp:** contained information describes the time viewers carry out the process of reading per one article
+- **user_type:** describe user type based on registered user and anonymous user or unregistered
+- **category_id:** contained information about category_id. The ids are using dynamic number generated
+- **tagging:** describe the tagging per content_id
+- **creator_id:** describe content owner
+- **category_name:** describe the category name
+- **viewers_birthdate:** describe the birthdate of viewers
+- **viewers_gender:** describe the gender of viewers
+- **viewers_region:** describe the region of viewers
+
+`IndonesiaCreditData.xlsx`
+
+- **Age** (numeric)
+- **Sex** (text: male  female)
+- **Job** (numeric: 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled, 3 - highly skilled)
+- **Housing** (text: own rent or free)
+- **Saving accounts** (text - little moderate, quite rich, rich)
+- **Checking account** (numeric in DM - IDR)
+- **Credit amount** (numeric in IDR)
+- **Duration** (numeric in month)
+- **Purpose**(text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others
+- **Risk** (Value target - Good or Bad Risk)
 
 ## General Instruction
 
-It is your job to predict the sales price for each house. For each Id in the test set, you must predict the value of the SalePrice variable.
+Download the file needed from [here](https://drive.google.com/drive/folders/14mi_spce8E45ByC2ugDgjEtJF1VHPaTs?usp=sharing).
 
-Make dashboard out of the data provided using Tableau, Data Studio, or your own preferred platform.
+### For DE
 
-Building your ETL/data preparation flow with scheduler such as Airflow or Luigi will be the plus point.
+Build a blueprint for your data pipeline or data flow solutions. You can propose your own database design, ETL schema, warehouse design, scheduler/automation tools, and visualization platform. Present your design and your reasoning behind every tools used.
 
-Any use of Postgresql, Elasticsearch and Kibana will be the plus point.
+### For DS or DA
 
-Your notebook need to have the following outline:
+Build a machine learning model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make text classification, tagging, risk model, segmentation, etc, it's up to you).
+
+Provide the notebook, and your notebook need to have the following outline:
 
 1. Title <br/>
    Write your project title and short description of your work
@@ -134,6 +83,10 @@ Your notebook need to have the following outline:
    This is where you handle the task
 5. Conclusion / Overall Analysis <br/>
    Write your findings, conclusion, and/or overall analysis here.
+
+You can also make dashboard out of the data provided using Tableau, Data Studio, or your own preferred platform.
+
+You can work on either on of those projects (DE or DA/DS) or even both. For DE and DA/DS projects, we expect you to build a full data pipeline from the raw data provided, cleaned using ETL you build, and your ML model should consume from your cleaned version of data.
 
 ## Submission
 
@@ -149,9 +102,9 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date:
+Start Date: November 19, 2022
 
-End Date:
+End Date: November 21, 2022 (15.00 GMT+7)
 
 ### Competition-Specific Terms
 
@@ -163,7 +116,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored based on the evaluation metric described on the Competition Rules. Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (MNC Portal and Sinarmas Land). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
@@ -193,13 +146,13 @@ Individual participants and Teams may use automated machine learning tool(s) ("A
     Submissions are void if they are in whole or part illegible, incomplete, damaged, altered, counterfeit, obtained through fraud, or late. Hacktiv8 reserves the right to disqualify any entrant who does not follow these Rules, including making a Submission that does not meet the Requirements.
 
 4. COMPETITION DATA. <br/>
-   "Competition Data" means the data or datasets available provided by Academic Team for the purpose of use in the Competition, including any prototype or executable code provided. The Competition Data will contain private and public test sets. Which data belongs to which set will not be made available to participants.
+   "Competition Data" means the data or datasets available provided by Academic Team and Hiring Partner for the purpose of use in the Competition, including any prototype or executable code provided. The Competition Data will contain private and public test sets. Which data belongs to which set will not be made available to participants.
 
-   A. Data Access and Use. You may access and use the Competition Data for non-commercial purposes only, including for participating in the Competition, and for academic research and education. Hacktiv8 reserves the right to disqualify any participant who uses the Competition Data other than as permitted by the Competition Website and these Rules.
+   A. Data Access and Use. You may access and use the Competition Data for non-commercial purposes only, including for participating in the Competition, and for academic research and education. Hacktiv8 reserves the right to disqualify any participant who uses the Competition Data other than as permitted.
 
-   B. Data Security. You agree to use reasonable and suitable measures to prevent persons who have not formally agreed to these Rules from gaining access to the Competition Data. You agree not to transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition. You agree to notify HAcktiv8 immediately upon learning of any possible unauthorized transmission of or unauthorized access to the Competition Data and agree to work with HAcktiv8 to rectify any unauthorized transmission or access.
+   B. Data Security. You agree to use reasonable and suitable measures to prevent persons who have not formally agreed to these Rules from gaining access to the Competition Data. You agree not to transmit, duplicate, publish, redistribute or otherwise provide or make available the Competition Data to any party not participating in the Competition. You agree to notify Hacktiv8 immediately upon learning of any possible unauthorized transmission of or unauthorized access to the Competition Data and agree to work with Hacktiv8 to rectify any unauthorized transmission or access.
 
-    C. External Data. You may use data other than the Competition Data (“External Data”) to develop and test your Submissions. However, you will ensure the External Data is publicly available and equally accessible to use by all participants of the Competition for purposes of the competition at no cost to the other participants. The ability to use External Data under this Section 4.C (External Data) does not limit your other obligations under these Competition Rules.
+    C. External Data. You may use data other than the Competition Data ("External Data") to develop and test your Submissions. However, you will ensure the External Data is publicly available and equally accessible to use by all participants of the Competition for purposes of the competition at no cost to the other participants. The ability to use External Data under this Section 4.C (External Data) does not limit your other obligations under these Competition Rules.
 
 5. SUBMISSION CODE REQUIREMENTS. <br/>
    A. Private Code Sharing. Unless otherwise specifically permitted under the Competition Specific Rules above, during the Competition Period, you are not allowed to privately share source or executable code developed in connection with or based upon the Competition Data or other source or executable code relevant to the Competition ("Competition Code"). This prohibition includes sharing Competition Code between participant. Any such sharing of Competition Code is a breach of these Competition Rules and may result in disqualification.
