@@ -5,7 +5,9 @@
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Kalbe and ARIA Indonesia). The open positions at Kalbe are currently looking for Data Scientist.
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Kalbe and ARIA Indonesia).
+
+The open positions at Kalbe are Data Scientist and ARIA Indonesia currently looking for **TBA**.
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
@@ -21,7 +23,7 @@ All FTDS Programs Alumni are very welcome to take part in the Talent Fair Offlin
 
 ## Acknowledgments
 
-Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for risk modeling, segmentation, and any other method you think suits the data well also.
+Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for **TBA**, and any other method you think suits the data well also.
 
 ## Dataset Description
 
