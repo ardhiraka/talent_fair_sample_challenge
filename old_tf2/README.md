@@ -1,37 +1,31 @@
-# Hacktiv8 Talent Fair Vol. 3 Challenge
+# Hacktiv8 Talent Fair Vol. 2 Challenge
 
-> Hacktiv8 Team in collaboration with Kalbe and ARIA Indonesia
+> Hacktiv8 Team in collaboration with MNC Portal and Sinarmas Land
 ---
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Kalbe and ARIA Indonesia). The open positions at Kalbe are currently looking for Data Scientist.
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Sinarmas Land and MNC Portal). The open positions at Sinarmas Land are Data Analyst Intern and MNC Portal currently looking for Data Scientist and Data Engineer.
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
-There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available (DE and DS), you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
-
-The Talent Fair Main Event will be held in hybrid manner.
-
-- Event Date: February 24, 2023. 14.00 WIB (GMT + 7)
-- Offline Venue: **Campus Hacktiv8 Pondok Indah** - Jl. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
-- Online Link: **TBA**
-
-All FTDS Programs Alumni are very welcome to take part in the Talent Fair Offline Event.
+There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available (DE, DS, DA), you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
 
 ## Acknowledgments
 
-Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for risk modeling, segmentation, and any other method you think suits the data well also.
+Dataset in folder `1` provided by MNC Portal for content tagging, text classification, and any other method you think suits the data well. Dataset in folder `2` provided by Sinarmas Land for risk modeling, segmentation, and any other method you think suits the data well also.
 
 ## Dataset Description
 
 ### File Description
 
 ```txt
-datasets
-|_ aria_data.csv - dataset from ARIA
-|_ kalbe_data.xlsx - dataset from Kalbe
+1
+|_ Dataset Dictionary.docx - contains columns explanation for final_dataset.csv
+|_ final_data.csv - dataset from MNC Portal
 
+2
+|_ IndonesiaCreditData.xlsx - dataset from Sinarmas Land (columns explanation included)
 ```
 
 You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_sample_challenge/blob/main/sample.ipynb).
@@ -40,28 +34,44 @@ You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_s
 
 Here's a brief version of what you'll find in the data description file.
 
-`kalbe_data.xlsx`
+`final_data.csv`
 
-- **day:** contained information about day on sold product.
-- **category:** contained information about product category. There are 2 categories used in this dataset, A and B.
-- **product:** contained information about product name. There are 4 products used in this dataset, A1, A2 and B1, B2.
-- **sales:** contained information about product sold.
+- **viewers_id:** contained information about viewers_id. There are several ids using UN- and using dynamic number generated
+- **content_id:** contained information about content_id. The ids are using dynamic number generated
+- **hit_timestamp:** contained information describes the time viewers carry out the process of reading per one article
+- **user_type:** describe user type based on registered user and anonymous user or unregistered
+- **category_id:** contained information about category_id. The ids are using dynamic number generated
+- **tagging:** describe the tagging per content_id
+- **creator_id:** describe content owner
+- **category_name:** describe the category name
+- **viewers_birthdate:** describe the birthdate of viewers
+- **viewers_gender:** describe the gender of viewers
+- **viewers_region:** describe the region of viewers
 
-`aria_data.csv`
+`IndonesiaCreditData.xlsx`
 
-***TBA***
+- **Age** (numeric)
+- **Sex** (text: male  female)
+- **Job** (numeric: 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled, 3 - highly skilled)
+- **Housing** (text: own rent or free)
+- **Saving accounts** (text - little moderate, quite rich, rich)
+- **Checking account** (numeric in DM - IDR)
+- **Credit amount** (numeric in IDR)
+- **Duration** (numeric in month)
+- **Purpose**(text: car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others
+- **Risk** (Value target - Good or Bad Risk)
 
 ## General Instruction
 
-Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/datasets).
+Download the file needed from [here](https://drive.google.com/drive/folders/14mi_spce8E45ByC2ugDgjEtJF1VHPaTs?usp=sharing).
 
 ### For DE
 
 Build a blueprint for your data pipeline or data flow solutions. You can propose your own database design, ETL schema, warehouse design, scheduler/automation tools, and visualization platform. Present your design and your reasoning behind every tools used.
 
-### For DS
+### For DS or DA
 
-Build a machine learning model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make time series analysis, forecasting, etc, it's up to you).
+Build a machine learning model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make text classification, tagging, risk model, segmentation, etc, it's up to you).
 
 Provide the notebook, and your notebook need to have the following outline:
 
@@ -78,45 +88,11 @@ Provide the notebook, and your notebook need to have the following outline:
 
 You can also make dashboard out of the data provided using Tableau, Data Studio, or your own preferred platform.
 
-You can work on either on of those projects (DE or DS) or even both. For DE and DS projects, we expect you to build a full data pipeline from the raw data provided, cleaned using ETL you build, and your ML model should consume from your cleaned version of data.
+You can work on either on of those projects (DE or DA/DS) or even both. For DE and DA/DS projects, we expect you to build a full data pipeline from the raw data provided, cleaned using ETL you build, and your ML model should consume from your cleaned version of data.
 
 ## Submission
 
 Submit your work via this [link](https://bit.ly/submitTalentFair).
-
-## Rubric Overview
-
-### Objective/Expected Result
-
-`kalbe dataset`
-
-1. Able to forecast every products and categories from Kalbe's dataset.
-2. Your working model able to reach a good Accuracy Rate.
-3. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
-4. Able to provide chart or any other measureable methods to prove your inferences.
-
-`aria dataset`
-
-***TBA***
-
-### Challenge Rubrics
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Modeling 1 | Mampu membuat forecast products hingga 14 hari kedepan dengan akurasi yang cukup bagus | 5 pts |
-| Modeling 2 | Mampu membuat forecast categories hingga 14 hari kedepan dengan akurasi yang cukup bagus | 5 pts |
-| Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 2 pts |
-| Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 2 pts |
-| Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 5 pts |
-| Model Analysis 1 | Penggunaan metrics yang tepat terhadap problem yang dihadapi | 3 pts |
-| Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
-| Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
-| Model Analysis 4 | Keterkaitan dengan domain business yang dihadapi | 5 pts |
-| Overall Analysis 1 | EDA | 5 pts |
-| Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 10 pts |
-| Overall Analysis 3 | Adanya further improvement plan | 3 pts |
-
-> Total: 55 Points
 
 ## Rules
 
@@ -128,13 +104,13 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date: February 15, 2023
+Start Date: November 19, 2022
 
-End Date: February 20, 2023 (12.59 GMT+7)
+End Date: November 21, 2022 (15.00 GMT+7)
 
 ### Competition-Specific Terms
 
-Competition Title: Hacktiv8 Talent Fair 2023
+Competition Title: Hacktiv8 Talent Fair 2022
 
 Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
@@ -142,7 +118,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Kalbe and ARIA Indonesia). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (MNC Portal and Sinarmas Land). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
