@@ -7,11 +7,11 @@
 
 Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Kalbe and ARIA Indonesia).
 
-The open positions at Kalbe are Data Scientist and ARIA Indonesia currently looking for **TBA**.
+The open positions at Kalbe are Data Scientist and ARIA Indonesia currently looking for Data Scientist.
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
-There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available (DE and DS), you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
+There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available, you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
 
 The Talent Fair Main Event will be held in hybrid manner.
 
@@ -23,7 +23,7 @@ All FTDS Programs Alumni are very welcome to take part in the Talent Fair Offlin
 
 ## Acknowledgments
 
-Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for **TBA**, and any other method you think suits the data well also.
+Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for predictive modeling, and any other method you think suits the data well also.
 
 ## Dataset Description
 
@@ -51,19 +51,15 @@ Here's a brief version of what you'll find in the data description file.
 
 `aria_data.csv`
 
-***TBA***
+- **target** contained information to predict plant nutrition
+- **V1 - V8** contained information about variable to predict plant nutrition
+- **sample_type** contained information about 2 different labs sample obtained
 
 ## General Instruction
 
-Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/datasets).
+Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/datasets).
 
-### For DE
-
-Build a blueprint for your data pipeline or data flow solutions. You can propose your own database design, ETL schema, warehouse design, scheduler/automation tools, and visualization platform. Present your design and your reasoning behind every tools used.
-
-### For DS
-
-Build a machine learning model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make time series analysis, forecasting, etc, it's up to you).
+Build a model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
 
 Provide the notebook, and your notebook need to have the following outline:
 
@@ -78,13 +74,15 @@ Provide the notebook, and your notebook need to have the following outline:
 5. Conclusion / Overall Analysis <br/>
    Write your findings, conclusion, and/or overall analysis here.
 
-You can also make dashboard out of the data provided using Tableau, Data Studio, or your own preferred platform.
+You can also make dashboard or apps out of the data provided using Tableau, Data Studio, Streamlit, or your own preferred platform.
 
-You can work on either on of those projects (DE or DS) or even both. For DE and DS projects, we expect you to build a full data pipeline from the raw data provided, cleaned using ETL you build, and your ML model should consume from your cleaned version of data.
+You can work on either on one of those projects or both.
+
+After finishing your product, **build your deck** to present your solution to the judges with 15 slides max.
 
 ## Submission
 
-Submit your work via this [link](https://bit.ly/submitTalentFair).
+Submit your **work AND your deck** via this [link](https://bit.ly/submitTalentFair).
 
 ## Rubric Overview
 
@@ -99,14 +97,22 @@ Submit your work via this [link](https://bit.ly/submitTalentFair).
 
 `aria dataset`
 
-***TBA***
+1. Able to create a prediction model of plant nutritional data that has been obtained from the test lab.
+2. Able to explore and analyze the datasets.
+3. Able to explain how to evaluate the model.
+4. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
+5. Able to provide further improvement plan.
 
 ### Challenge Rubrics
 
+The rubrics below are used to assess both of the Kalbe and ARIA datasets.
+
 | Criteria | Meet Expectations | Points |
 | --- | --- | --- |
-| Modeling 1 | Mampu membuat forecast products hingga 14 hari kedepan dengan akurasi yang cukup bagus | 5 pts |
-| Modeling 2 | Mampu membuat forecast categories hingga 14 hari kedepan dengan akurasi yang cukup bagus | 5 pts |
+| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 |
+| Modeling 1 | Mampu membuat forecast products hingga 14 hari kedepan dengan akurasi yang cukup bagus | 3 pts |
+| Modeling 2 | Mampu membuat forecast categories hingga 14 hari kedepan dengan akurasi yang cukup bagus | 2 pts |
+| Modeling 3 | Mampu membuat dan memilih model terbaik untuk prediksi nutrisi tanaman | 5 pts |
 | Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 2 pts |
 | Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 2 pts |
 | Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 5 pts |
@@ -114,11 +120,11 @@ Submit your work via this [link](https://bit.ly/submitTalentFair).
 | Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
 | Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
 | Model Analysis 4 | Keterkaitan dengan domain business yang dihadapi | 5 pts |
-| Overall Analysis 1 | EDA | 5 pts |
+| Overall Analysis 1 | EDA Analysis | 5 pts |
 | Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 10 pts |
 | Overall Analysis 3 | Adanya further improvement plan | 3 pts |
 
-> Total: 55 Points
+> Total: 60 Points
 
 ## Rules
 
