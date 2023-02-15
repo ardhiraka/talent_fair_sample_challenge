@@ -82,7 +82,7 @@ After finishing your product, **build your deck** to present your solution to th
 
 ## Submission
 
-Submit your **work AND your deck** via this [link](https://bit.ly/submitTalentFair).
+Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/submitTalentFair).
 
 ## Rubric Overview
 
@@ -90,7 +90,7 @@ Submit your **work AND your deck** via this [link](https://bit.ly/submitTalentFa
 
 `kalbe dataset`
 
-1. Able to forecast every products and categories from Kalbe's dataset.
+1. Able to forecast 14 days every products and categories from Kalbe's dataset.
 2. Your working model able to reach a good Accuracy Rate.
 3. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
 4. Able to provide chart or any other measureable methods to prove your inferences.
