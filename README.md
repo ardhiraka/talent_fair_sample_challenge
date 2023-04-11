@@ -1,13 +1,13 @@
-# Hacktiv8 Talent Fair Vol. 3 Challenge
+# Hacktiv8 Talent Fair Vol. 4 Challenge
 
-> Hacktiv8 Team in collaboration with Kalbe and ARIA Indonesia
+> Hacktiv8 Team in collaboration with Paragoncorp, Julo and Erajaya
 ---
+
+_Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed in a `fast-track` manner by the company's judges (Kalbe and ARIA Indonesia).
-
-The open positions at Kalbe are Data Scientist and ARIA Indonesia currently looking for Data Scientist.
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Paragoncorp, Julo and Erajaya).
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
@@ -15,15 +15,15 @@ There will be 2 datasets provided and you have to work on both datasets. Because
 
 The Talent Fair Main Event will be held in hybrid manner.
 
-- Event Date: February 24, 2023. 14.00 WIB (GMT + 7)
+- Event Date: May 5, 2023. 14.00 WIB (GMT + 7)
 - Offline Venue: **Campus Hacktiv8 Pondok Indah** - Jl. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
 - Online Link: **TBA**
 
-All FTDS Programs Alumni are very welcome to take part in the Talent Fair Offline Event.
+Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
 
 ## Acknowledgments
 
-Dataset in folder `1` provided by Kalbe for forecasting, or any other method you think suits the data well. Dataset in folder `2` provided by ARIA Indonesia for predictive modeling, and any other method you think suits the data well also.
+Dataset in folder `dataset` provided by Paragoncorp for time series analysis, forecasting, or any other method you think suits the data well.
 
 ## Dataset Description
 
@@ -31,8 +31,7 @@ Dataset in folder `1` provided by Kalbe for forecasting, or any other method you
 
 ```txt
 datasets
-|_ aria_data.csv - dataset from ARIA
-|_ kalbe_data.xlsx - dataset from Kalbe
+|_ sample_dataset_timeseries_noarea.csv - dataset from Paragoncorp
 
 ```
 
@@ -42,24 +41,19 @@ You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_s
 
 Here's a brief version of what you'll find in the data description file.
 
-`kalbe_data.xlsx`
+`sample_dataset_timeseries_noarea.csv`
 
-- **day:** contained information about day on sold product.
-- **category:** contained information about product category. There are 2 categories used in this dataset, A and B.
-- **product:** contained information about product name. There are 4 products used in this dataset, A1, A2 and B1, B2.
-- **sales:** contained information about product sold.
-
-`aria_data.csv`
-
-- **target** contained information to predict plant nutrition
-- **V1 - V8** contained information about variable to predict plant nutrition
-- **sample_type** contained information about 2 different labs sample obtained
+- **week_number:** contained information about week of specific product sold, (2021-52 to 2023-14).
+- **week_start_date:** contained information about week start date of specific product sold.
+- **week_end_date:** contained information about week end date of specific product sold.
+- **product_item:** contained information about product item/product code (Variabel Bebas).
+- **quantity:** contained information about quantity of product in respective week.
 
 ## General Instruction
 
 Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/datasets).
 
-Build a model to handle each dataset provided by Hiring Partner. You can explore your own case based on each dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
+Build a model to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
 
 Provide the notebook, and your notebook need to have the following outline:
 
@@ -76,9 +70,9 @@ Provide the notebook, and your notebook need to have the following outline:
 
 You can also make dashboard or apps out of the data provided using Tableau, Data Studio, Streamlit, or your own preferred platform.
 
-You can work on either on one of those projects or both.
+<!-- You can work on either on one of those projects or both. -->
 
-After finishing your product, **build your deck** to present your solution to the judges with 15 slides max.
+After finishing your product, **build your deck** to present your solution to the judges with 15 slides max and 30 second **elevator pitch**.
 
 ## Submission
 
@@ -88,34 +82,24 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Objective/Expected Result
 
-`kalbe dataset`
+`Paragoncorp dataset`
 
-1. Able to forecast 14 days every products and categories from Kalbe's dataset.
+1. Able to forecast 14 days every products and categories from Paragoncorp's dataset.
 2. Your working model able to reach a good Accuracy Rate.
 3. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
 4. Able to provide chart or any other measureable methods to prove your inferences.
 
-`aria dataset`
-
-1. Able to create a prediction model of plant nutritional data that has been obtained from the test lab.
-2. Able to explore and analyze the datasets.
-3. Able to explain how to evaluate the model.
-4. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
-5. Able to provide further improvement plan.
-
 ### Challenge Rubrics
 
-The rubrics below are used to assess both of the Kalbe and ARIA datasets.
+The rubrics below are used to assess Paragoncorp datasets.
 
 | Criteria | Meet Expectations | Points |
 | --- | --- | --- |
-| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 |
-| Modeling 1 | Mampu membuat forecast products hingga 14 hari kedepan dengan akurasi yang cukup bagus | 3 pts |
-| Modeling 2 | Mampu membuat forecast categories hingga 14 hari kedepan dengan akurasi yang cukup bagus | 2 pts |
-| Modeling 3 | Mampu membuat dan memilih model terbaik untuk prediksi nutrisi tanaman | 5 pts |
-| Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 2 pts |
-| Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 2 pts |
-| Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 5 pts |
+| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 pts |
+| Modeling 1 | Mampu membuat forecast untuk nilai quantity periode berikutnya | 3 pts |
+| Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 1 pts |
+| Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 1 pts |
+| Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 2 pts |
 | Model Analysis 1 | Penggunaan metrics yang tepat terhadap problem yang dihadapi | 3 pts |
 | Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
 | Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
@@ -124,7 +108,7 @@ The rubrics below are used to assess both of the Kalbe and ARIA datasets.
 | Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 10 pts |
 | Overall Analysis 3 | Adanya further improvement plan | 3 pts |
 
-> Total: 60 Points
+> Total: 48 Points
 
 ## Rules
 
@@ -136,9 +120,9 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date: February 15, 2023
+Start Date: April 12, 2023
 
-End Date: February 20, 2023 (12.59 GMT+7)
+End Date: April 16, 2023 (12.59 GMT+7)
 
 ### Competition-Specific Terms
 
@@ -150,7 +134,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Kalbe and ARIA Indonesia). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Paragoncorp, Julo and Erajaya). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
@@ -164,7 +148,7 @@ Individual participants and Teams may use automated machine learning tool(s) ("A
 
 1. ELIGIBILITY.
 
-   - To be eligible to enter the Competition, you must be: (i) a registered alumni at Hacktiv8 FTDS Program, (ii) registered at Hacktiv8 Career Team, (iii) the older of 18 years old or the age of majority in your jurisdiction of residence.
+   - To be eligible to enter the Competition, you must be: (i) a registered student at Hacktiv8 FTDS Program, (ii) registered at Hacktiv8 Career Team, (iii) the older of 18 years old or the age of majority in your jurisdiction of residence.
    - Unless otherwise stated in the Specific Competition Rules above or prohibited by internal policies of the Competition Entities, employees, interns, contractors, officers and directors of Competition Entities may enter and participate in the Competition, but are not eligible to win any Prizes. "Competition Entities" means the Competition Partner, Hacktiv8, and their respective companies, subsidiaries and affiliates. If you are such a participant from a Competition Entity, you are subject to all applicable internal policies of your employer with respect to your participation.
 
 2. COMPETITION PERIOD.<br/>
