@@ -1,13 +1,13 @@
 # Hacktiv8 Talent Fair Vol. 4 Challenge
 
-> Hacktiv8 Team in collaboration with Paragoncorp, Julo and Erajaya
+> Hacktiv8 Team in collaboration with ParagonCorp, JULO and Erajaya Group
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Paragoncorp, Julo and Erajaya).
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (ParagonCorp, JULO and Erajaya Group).
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
@@ -23,7 +23,7 @@ Only FTDS Programs recent graduates are eligible to take part in the Talent Fair
 
 ## Acknowledgments
 
-Dataset in folder `dataset` provided by Paragoncorp for time series analysis, forecasting, or any other method you think suits the data well.
+Dataset in folder `dataset` provided by ParagonCorp for time series analysis, forecasting, or any other method you think suits the data well.
 
 ## Dataset Description
 
@@ -82,9 +82,9 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Objective/Expected Result
 
-`Paragoncorp dataset`
+`ParagonCorp dataset`
 
-1. Able to forecast 14 days every products and categories from Paragoncorp's dataset.
+1. Able to forecast Quantity in the next period from ParagonCorp's dataset.
 2. Your working model able to reach a good Accuracy Rate.
 3. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
 4. Able to provide chart or any other measureable methods to prove your inferences.
@@ -134,7 +134,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Paragoncorp, Julo and Erajaya). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (ParagonCorp, JULO and Erajaya Group). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
