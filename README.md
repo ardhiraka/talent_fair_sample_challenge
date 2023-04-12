@@ -11,8 +11,6 @@ Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, 
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
-There will be 2 datasets provided and you have to work on both datasets. Because there are several open positions available, you can work on both datasets and give the judges either data pipeline solutions, machine learning model solutions, or even both.
-
 The Talent Fair Main Event will be held in hybrid manner.
 
 - Event Date: May 5, 2023. 14.00 WIB (GMT + 7)
