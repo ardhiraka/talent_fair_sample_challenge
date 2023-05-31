@@ -125,9 +125,9 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date: April 12, 2023
+Start Date: June 2, 2023
 
-End Date: April 16, 2023 (12.59 GMT+7)
+End Date: June 6, 2023 (12.59 GMT+7)
 
 ### Competition-Specific Terms
 
