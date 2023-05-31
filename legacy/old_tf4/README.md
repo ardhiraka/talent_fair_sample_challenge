@@ -1,27 +1,27 @@
-# Hacktiv8 Talent Fair Vol. 5 Challenge
+# Hacktiv8 Talent Fair Vol. 4 Challenge
 
-> Hacktiv8 Team in collaboration with Lion Parcel
+> Hacktiv8 Team in collaboration with ParagonCorp, JULO and Erajaya Group
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Lion Parcel).
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (ParagonCorp, JULO and Erajaya Group).
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
 The Talent Fair Main Event will be held in hybrid manner.
 
-- Event Date: June 16, 2023. 14.00 WIB (GMT + 7)
+- Event Date: May 5, 2023. 14.00 WIB (GMT + 7)
 - Offline Venue: **Campus Hacktiv8 Pondok Indah** - Jl. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
 - Online Link: **TBA**
 
-Only FTDS Programs alumni are eligible to take part in the Talent Fair Event.
+Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
 
 ## Acknowledgments
 
-Dataset in folder `dataset` provided by Lion Parcel for analysis, profiling, or any other method you think suits the data well.
+Dataset in folder `dataset` provided by ParagonCorp for time series analysis, forecasting, or any other method you think suits the data well.
 
 ## Dataset Description
 
@@ -29,8 +29,7 @@ Dataset in folder `dataset` provided by Lion Parcel for analysis, profiling, or 
 
 ```txt
 datasets
-|_ lion-loan-train.csv - train dataset from Lion Parcel
-|_ lion-loan-test.csv - test dataset from Lion Parcel
+|_ sample_dataset_timeseries_noarea.csv - dataset from Paragoncorp
 
 ```
 
@@ -40,29 +39,21 @@ You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_s
 
 Here's a brief version of what you'll find in the data description file.
 
-`lion-loan-train.csv`
+`sample_dataset_timeseries_noarea.csv`
 
-- **Loan_ID**: Unique Loan ID
-- **Gender**: Male/ Female
-- **Married**: Applicant married (Y/N)
-- **Dependents**: Number of dependents
-- **Education**: Applicant Education (Graduate/ Under Graduate)
-- **Self_Employed**: Self-employed (Y/N)
-- **ApplicantIncome**: Applicant income
-- **CoapplicantIncome**: Coapplicant income
-- **LoanAmount**: Loan amount in thousands
-- **Loan_Amount_Term**: Term of a loan in months
-- **Credit_History**: credit history meets guidelines
-- **Property_Area**: Urban/ Semi-Urban/ Rural
-- **Loan_Status**: Loan approved (Y/N)
+- **week_number:** contained information about week of specific product sold, (2021-52 to 2023-14).
+- **week_start_date:** contained information about week start date of specific product sold.
+- **week_end_date:** contained information about week end date of specific product sold.
+- **product_item:** contained information about product item/product code (Variabel Bebas).
+- **quantity:** contained information about quantity of product in respective week.
 
 ## General Instruction
 
 Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/datasets).
 
-Build a dashboard to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, profiling, predictive analysis, etc, it's up to you).
+Build a model to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
 
-Provide the notebook and dashboard, and your notebook need to have the following outline:
+Provide the notebook, and your notebook need to have the following outline:
 
 1. Title <br/>
    Write your project title and short description of your work
@@ -75,7 +66,7 @@ Provide the notebook and dashboard, and your notebook need to have the following
 5. Conclusion / Overall Analysis <br/>
    Write your findings, conclusion, and/or overall analysis here.
 
-You can make dashboard or apps out of the data provided using Tableau, Data Studio, Streamlit, Quicksight, or your own preferred platform.
+You can also make dashboard or apps out of the data provided using Tableau, Data Studio, Streamlit, or your own preferred platform.
 
 <!-- You can work on either on one of those projects or both. -->
 
@@ -89,31 +80,33 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Objective/Expected Result
 
-`Lion Parcel dataset`
+`ParagonCorp dataset`
 
-1. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
-2. Able to provide chart or any other measureable methods to prove your findings/inferences.
-3. Able to provide in-depth customer profiling based on their loan data.
-4. Able to provide through analysis and story telling based on the data provided.
+1. Able to forecast Quantity in the next period from ParagonCorp's dataset.
+2. Your working model able to reach a good Accuracy Rate.
+3. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
+4. Able to provide chart or any other measureable methods to prove your inferences.
 
 ### Challenge Rubrics
 
-The rubrics below are used to assess Lion Parcel datasets.
+The rubrics below are used to assess Paragoncorp datasets.
 
 | Criteria | Meet Expectations | Points |
 | --- | --- | --- |
+| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 pts |
+| Modeling 1 | Mampu membuat forecast untuk nilai quantity periode berikutnya | 3 pts |
 | Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 1 pts |
 | Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 1 pts |
 | Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 2 pts |
-| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 pts |
-| Visualization | Mampu membuat visualisasi untuk mendukung temuan yang dilakukan | 5 pts |
-| Interactivity | Mampu membuat interactivity pada dashboard | 5 pts |
-| Story Telling | Mampu menyampaikan hasil analisis secara jelas dan padat | 5 pts |
+| Model Analysis 1 | Penggunaan metrics yang tepat terhadap problem yang dihadapi | 3 pts |
+| Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
+| Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
+| Model Analysis 4 | Keterkaitan dengan domain business yang dihadapi | 5 pts |
 | Overall Analysis 1 | EDA Analysis | 5 pts |
 | Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 10 pts |
 | Overall Analysis 3 | Adanya further improvement plan | 3 pts |
 
-> Total: 42 Points
+> Total: 48 Points
 
 ## Rules
 
@@ -139,7 +132,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Lion Parcel). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (ParagonCorp, JULO and Erajaya Group). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
