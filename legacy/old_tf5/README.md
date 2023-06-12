@@ -1,27 +1,27 @@
-# Hacktiv8 Talent Fair Vol. 6 Challenge
+# Hacktiv8 Talent Fair Vol. 5 Challenge
 
-> Hacktiv8 Team in collaboration with Home Credit Indonesia
+> Hacktiv8 Team in collaboration with Lion Parcel
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Home Credit Indonesia).
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Lion Parcel).
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
 The Talent Fair Main Event will be held in hybrid manner.
 
-- Event Date: June 23, 2023. 14.00 WIB (GMT + 7)
+- Event Date: June 16, 2023. 14.00 WIB (GMT + 7)
 - Offline Venue: **Campus Hacktiv8 Pondok Indah** - Jl. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
 - Online Link: **TBA**
 
-Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
+Only FTDS Programs alumni are eligible to take part in the Talent Fair Event.
 
 ## Acknowledgments
 
-Dataset in folder `dataset` provided by Home Credit Indonesia for analysis, profiling, predictive modelling or any other method you think suits the data well.
+Dataset in folder `dataset` provided by Lion Parcel for analysis, profiling, or any other method you think suits the data well.
 
 ## Dataset Description
 
@@ -29,58 +29,38 @@ Dataset in folder `dataset` provided by Home Credit Indonesia for analysis, prof
 
 ```txt
 datasets
-|_ Application (primary - need to be used)
-|_ Installments payment
-|_ Credit bureau
-|_ Previous application
-|_ And etc.
+|_ lion-loan-train.csv - train dataset from Lion Parcel
+|_ lion-loan-test.csv - test dataset from Lion Parcel
+
 ```
 
-<!-- You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_sample_challenge/blob/main/sample.ipynb). -->
+You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_sample_challenge/blob/main/sample.ipynb).
 
 ### Data Fields
 
 Here's a brief version of what you'll find in the data description file.
 
-- application_{train|test}.csv
-  - This is the main table, broken into two files for Train (with TARGET) and Test (without TARGET).
-  - Static data for all applications. One row represents one loan in our data sample.
+`lion-loan-train.csv`
 
-- bureau.csv
-  - All client's previous credits provided by other financial institutions that were reported to Credit Bureau (for clients who have a loan in our sample).
-  - For every loan in our sample, there are as many rows as number of credits the client had in Credit Bureau before the application date.
-
-- bureau_balance.csv
-  - Monthly balances of previous credits in Credit Bureau.
-  - This table has one row for each month of history of every previous credit reported to Credit Bureau – i.e the table has (#loans in sample _of relative previous credits_ of months where we have some history observable for the previous credits) rows.
-
-- POS_CASH_balance.csv
-  - Monthly balance snapshots of previous POS (point of sales) and cash loans that the applicant had with Home Credit.
-  - This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample _of relative previous credits_ of months in which we have some history observable for the previous credits) rows.
-
-- credit_card_balance.csv
-  - Monthly balance snapshots of previous credit cards that the applicant has with Home Credit.
-  - This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample _of relative previous credit cards_ of months where we have some history observable for the previous credit card) rows.
-
-- previous_application.csv
-  - All previous applications for Home Credit loans of clients who have loans in our sample.
-  - There is one row for each previous application related to loans in our data sample.
-
-- installments_payments.csv
-  - Repayment history for the previously disbursed credits in Home Credit related to the loans in our sample.
-  - There is a) one row for every payment that was made plus b) one row each for missed payment.
-  - One row is equivalent to one payment of one installment OR one installment corresponding to one payment of one previous Home Credit credit related to loans in our sample.
-
-- HomeCredit_columns_description.csv
-  - This file contains descriptions for the columns in the various data files.
-
-![data schema](https://storage.googleapis.com/kaggle-media/competitions/home-credit/home_credit.png)
+- **Loan_ID**: Unique Loan ID
+- **Gender**: Male/ Female
+- **Married**: Applicant married (Y/N)
+- **Dependents**: Number of dependents
+- **Education**: Applicant Education (Graduate/ Under Graduate)
+- **Self_Employed**: Self-employed (Y/N)
+- **ApplicantIncome**: Applicant income
+- **CoapplicantIncome**: Coapplicant income
+- **LoanAmount**: Loan amount in thousands
+- **Loan_Amount_Term**: Term of a loan in months
+- **Credit_History**: credit history meets guidelines
+- **Property_Area**: Urban/ Semi-Urban/ Rural
+- **Loan_Status**: Loan approved (Y/N)
 
 ## General Instruction
 
-Download the file needed from [here](https://www.kaggle.com/competitions/home-credit-default-risk/data).
+Download the file needed from [here](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/datasets).
 
-Build a model to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
+Build a dashboard to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, profiling, predictive analysis, etc, it's up to you).
 
 Provide the notebook and dashboard, and your notebook need to have the following outline:
 
@@ -97,17 +77,9 @@ Provide the notebook and dashboard, and your notebook need to have the following
 
 You can make dashboard or apps out of the data provided using Tableau, Data Studio, Streamlit, Quicksight, or your own preferred platform.
 
-You **HAVE TO** write your README.md file to explain your project. Your README.md file should have the following outline:
-
-1. Full Name & Batch
-2. Dashboard / Deployment Link
-3. Project Title
-4. Project Description
-5. Conclusion
-
 <!-- You can work on either on one of those projects or both. -->
 
-After finishing your product, **build your deck** to present your solution to the judges with 20 slides max and 30 second **elevator pitch**.
+After finishing your product, **build your deck** to present your solution to the judges with 15 slides max and 30 second **elevator pitch**.
 
 ## Submission
 
@@ -117,32 +89,31 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Objective/Expected Result
 
-1. To be able to show skills on data preparation by utilizing multiple data sources available (can explain, how to, and why need to) - a plus point if able to utilize more than one source
-1. To be able to gather insights from data and visualize it for easier understanding (for example: customers profile, etc.)
-1. To be able to do story telling out of visualized data to make a sound business insight - one powerful story is better than multiple weak stories
-1. To be able to explain methods (i.e. preprocessing, algorithm, etc.) used to deliver the output of the challenges
+`Lion Parcel dataset`
+
+1. Able to explain the methodology used for every step, algorithm, data manipulation, data cleansing, etc.
+2. Able to provide chart or any other measureable methods to prove your findings/inferences.
+3. Able to provide in-depth customer profiling based on their loan data.
+4. Able to provide through analysis and story telling based on the data provided.
 
 ### Challenge Rubrics
 
-The rubrics below are used to assess Home Credit Indonesia datasets.
+The rubrics below are used to assess Lion Parcel datasets.
 
 | Criteria | Meet Expectations | Points |
 | --- | --- | --- |
 | Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 1 pts |
 | Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 1 pts |
 | Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 2 pts |
-| Preparation | Mampu mempersiapkan dan menggunakan data dari setiap table yang diberikan | 4 pts/table |
 | EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 pts |
-| Modeling 1 | Mampu membuat klasifikasi dari data yang disediakan | 3 pts |
-| Model Analysis 1 | Penggunaan metrics yang tepat terhadap problem yang dihadapi | 3 pts |
-| Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
-| Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
-| Model Analysis 4 | Keterkaitan dengan domain business yang dihadapi | 5 pts |
-| Overall Analysis 1 | EDA Analysis | 10 pts |
-| Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 5 pts |
-| Overall Analysis 3 | Adanya further improvement plan | 1 pts |
+| Visualization | Mampu membuat visualisasi untuk mendukung temuan yang dilakukan | 5 pts |
+| Interactivity | Mampu membuat interactivity pada dashboard | 5 pts |
+| Story Telling | Mampu menyampaikan hasil analisis secara jelas dan padat | 5 pts |
+| Overall Analysis 1 | EDA Analysis | 5 pts |
+| Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 10 pts |
+| Overall Analysis 3 | Adanya further improvement plan | 3 pts |
 
-> Total: 74 Points (Max)
+> Total: 42 Points
 
 ## Rules
 
@@ -154,9 +125,9 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date: June 14, 2023
+Start Date: June 2, 2023
 
-End Date: June 18, 2023 (12.59 GMT+7)
+End Date: June 6, 2023 (12.59 GMT+7)
 
 ### Competition-Specific Terms
 
@@ -168,7 +139,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Home Credit Indonesia). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Lion Parcel). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
