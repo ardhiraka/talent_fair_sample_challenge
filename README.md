@@ -156,7 +156,7 @@ You may select only 1 final submission for judging.
 
 Start Date: June 14, 2023
 
-End Date: June 18, 2023 (12.59 GMT+7)
+End Date: June 19, 2023 (12.59 GMT+7)
 
 ### Competition-Specific Terms
 
