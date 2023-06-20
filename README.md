@@ -11,10 +11,9 @@ Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, 
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
-The Talent Fair Main Event will be held in hybrid manner.
+The Talent Fair Main Event will be held in online manner.
 
 - Event Date: June 23, 2023. 14.00 WIB (GMT + 7)
-- Offline Venue: **Campus Hacktiv8 Pondok Indah** - Jl. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240
 - Online Link: **TBA**
 
 Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
