@@ -1,54 +1,45 @@
-# Hacktiv8 Talent Fair Vol. 7 Challenge
+# Hacktiv8 Talent Fair Vol. 6 Challenge
 
-> Hacktiv8 Team in collaboration with PT Bank Danamon Indonesia Tbk
+> Hacktiv8 Team in collaboration with Home Credit Indonesia
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
 
 ## Challenge Brief Description
 
-Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton.
+Hacktiv8 Talent Fair specially held for Hacktiv8's Data Science graduates only, which we packed in the format of competition/hackaton. The winner of this Talent Fair will be processed by the company's judges (Home Credit Indonesia).
 
 There will be other companies that will also come as participants who can see the resumes of projects that you are working on and can immediately enter the recruitment process stage (a Zoom's breakout room will be available during the event).
 
 The Talent Fair Main Event will be held in online manner.
 
-- Event Date: August 18, 2023. 14.00 WIB (GMT + 7)
+- Event Date: June 23, 2023. 14.00 WIB (GMT + 7)
 - Online Link: **TBA**
 
 Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
 
 ## Acknowledgments
 
-For this challenge, you can find external open source financial data from `data.gov`, `Kaggle`, or any other open source data provider. You can also use your own data. If possible, please provide the dataset with with base country of **Indonesia**, Asean/India, or others as last choice.
-
-The General theme of the challenge is **Applied Data Science in Banking**. You can choose your own case, but it has to be related to the theme and specific to the **Financial Industry**. You can consult to your buddy about the datasets.
-
-<!-- Dataset in folder `dataset` provided by PT Bank Danamon Indonesia Tbk for analysis, profiling, predictive modelling or any other method you think suits the data well.
- -->
+Dataset in folder `dataset` provided by Home Credit Indonesia for analysis, profiling, predictive modelling or any other method you think suits the data well.
 
 ## Dataset Description
 
 ### File Description
 
-N/A, you can freely choose your own datasets.
-
-<!-- ```txt
+```txt
 datasets
 |_ Application (primary - need to be used)
 |_ Installments payment
 |_ Credit bureau
 |_ Previous application
 |_ And etc.
-``` -->
+```
 
 <!-- You can see sample of the data [here](https://github.com/ardhiraka/talent_fair_sample_challenge/blob/main/sample.ipynb). -->
 
 ### Data Fields
 
-N/A, you can freely choose your own datasets.
-
-<!-- Here's a brief version of what you'll find in the data description file.
+Here's a brief version of what you'll find in the data description file.
 
 - application_{train|test}.csv
   - This is the main table, broken into two files for Train (with TARGET) and Test (without TARGET).
@@ -82,11 +73,13 @@ N/A, you can freely choose your own datasets.
 - HomeCredit_columns_description.csv
   - This file contains descriptions for the columns in the various data files.
 
-![data schema](https://storage.googleapis.com/kaggle-media/competitions/home-credit/home_credit.png) -->
+![data schema](https://storage.googleapis.com/kaggle-media/competitions/home-credit/home_credit.png)
 
 ## General Instruction
 
-You can explore your own case based on dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
+Download the file needed from [here](https://www.kaggle.com/competitions/home-credit-default-risk/data).
+
+Build a model to handle dataset provided by Hiring Partner. You can explore your own case based on dataset (you can make time series analysis, forecasting, predictive analysis, etc, it's up to you).
 
 Provide the notebook and dashboard, and your notebook need to have the following outline:
 
@@ -123,33 +116,32 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Objective/Expected Result
 
-1. Able to match the business objective/use case with the data source choosen.
-2. Able to do data processing from preparation to execution in order to get champion result (complexity, resource allocation, potential cost, running time, etc).
-3. Able to deliver the output interpretation in visualization.
-4. Able to do engaging and insightful story-telling in presentation.
-5. Able to give potential business impact.
+1. To be able to show skills on data preparation by utilizing multiple data sources available (can explain, how to, and why need to) - a plus point if able to utilize more than one source
+1. To be able to gather insights from data and visualize it for easier understanding (for example: customers profile, etc.)
+1. To be able to do story telling out of visualized data to make a sound business insight - one powerful story is better than multiple weak stories
+1. To be able to explain methods (i.e. preprocessing, algorithm, etc.) used to deliver the output of the challenges
 
 ### Challenge Rubrics
 
-The rubrics below are used to assess PT Bank Danamon Indonesia Tbk challenges.
-
-**Main Rubrics**
+The rubrics below are used to assess Home Credit Indonesia datasets.
 
 | Criteria | Meet Expectations | Points |
 | --- | --- | --- |
-| Runs Perfectly 1 | Before being submitted, the assignments that were done had to be restarted and Run All by students | 1 pts |
-| Runs Perfectly 2 | The execution of the task can be re-run to check for no errors or changes in results | 1 pts |
-| Objective | Able to make objectives in accordance with the business case | 5 pts |
-| Readability | All lines of code are well documented with Markdown for code explanation | 2 pts |
-| Preparation | Able to do Data Preparations | 5 pts |
-| EDA | Able to explore data by writing down the findings at each step taken | 5 pts |
-| Visualization | Able to create visualizations to support the findings made | 10 pts |
-| Story Telling | Able to convey the results of the analysis in a clear and concise manner | 5 pts |
+| Runs Perfectly 1 | Pengerjaan tugas sebelum dikumpulkan telah dilakukan Restart notebook dan Run All oleh student | 1 pts |
+| Runs Perfectly 2 | Pengerjaan tugas dapat dilakukan run ulang untuk mengecek tidak adanya error atau perubahan hasil | 1 pts |
+| Readability | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 2 pts |
+| Preparation | Mampu mempersiapkan dan menggunakan data dari setiap table yang diberikan | 4 pts/table |
+| EDA | Mampu melakukan eksplorasi data dengan menuliskan temuan di setiap langkah yang dilakukan | 5 pts |
+| Modeling 1 | Mampu membuat klasifikasi dari data yang disediakan | 3 pts |
+| Model Analysis 1 | Penggunaan metrics yang tepat terhadap problem yang dihadapi | 3 pts |
+| Model Analysis 2 | Penjelasan mengenai performa model yang didapat | 5 pts |
+| Model Analysis 3 | Penjelasan mengenai kelebihan dan kekurangan model | 5 pts |
+| Model Analysis 4 | Keterkaitan dengan domain business yang dihadapi | 5 pts |
 | Overall Analysis 1 | EDA Analysis | 10 pts |
-| Overall Analysis 2 | Mable to explain the methodology for selecting cleaning steps and data manipulation to algorithms | 5 pts |
-| Overall Analysis 3 | There is a business impact, implementation, and further improvement | 10 pts |
+| Overall Analysis 2 | Mampu menjelaskan metodologi pemilihan langkah cleaning dan manipulasi data hingga algoritma | 5 pts |
+| Overall Analysis 3 | Adanya further improvement plan | 1 pts |
 
-Additional Rubrics such as model performance, model complexity, and model interpretability, deployment, etc will be assessed based on your project.
+> Total: 74 Points (Max)
 
 ## Rules
 
@@ -175,7 +167,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (PT Bank Danamon Indonesia Tbk). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (Home Credit Indonesia). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
