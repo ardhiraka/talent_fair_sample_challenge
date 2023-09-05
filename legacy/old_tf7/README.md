@@ -1,6 +1,6 @@
-# Hacktiv8 Talent Fair Vol. 8 Challenge
+# Hacktiv8 Talent Fair Vol. 7 Challenge
 
-> Hacktiv8 Team in collaboration with To Be Announced
+> Hacktiv8 Team in collaboration with PT Bank Danamon Indonesia Tbk
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
@@ -13,7 +13,7 @@ There will be other companies that will also come as participants who can see th
 
 The Talent Fair Main Event will be held in online manner.
 
-- Event Date: September 15, 2023. 14.00 WIB (GMT + 7)
+- Event Date: August 18, 2023. 14.00 WIB (GMT + 7)
 - Online Link: **TBA**
 
 Only FTDS Programs recent graduates are eligible to take part in the Talent Fair Event.
@@ -24,7 +24,7 @@ For this challenge, you can find external open source financial data from `data.
 
 The General theme of the challenge is **Applied Data Science in Banking**. You can choose your own case, but it has to be related to the theme and specific to the **Financial Industry**. You can consult to your buddy about the datasets.
 
-<!-- Dataset in folder `dataset` provided by To Be Announced for analysis, profiling, predictive modelling or any other method you think suits the data well.
+<!-- Dataset in folder `dataset` provided by PT Bank Danamon Indonesia Tbk for analysis, profiling, predictive modelling or any other method you think suits the data well.
  -->
 
 ## Dataset Description
@@ -131,7 +131,7 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Challenge Rubrics
 
-The rubrics below are used to assess To Be Announced challenges.
+The rubrics below are used to assess PT Bank Danamon Indonesia Tbk challenges.
 
 **Main Rubrics**
 
@@ -161,9 +161,9 @@ You may select only 1 final submission for judging.
 
 ### Competition Timeline
 
-Start Date: September 6, 2023
+Start Date: August 9, 2023
 
-End Date: September 11, 2023 (12.59 GMT+7)
+End Date: August 14, 2023 (12.59 GMT+7)
 
 ### Competition-Specific Terms
 
@@ -175,7 +175,7 @@ Data Access and Use: Competition Use and Academic, Non-Commercial Use Only
 
 ENTRY IN THIS COMPETITION CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL COMPETITION RULES.
 
-The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (To Be Announced). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
+The Competition named above is a skills-based competition to promote and further the field of data science. You must register via `Hacktiv8 Career Team` to enter. Your competition submissions ("Submissions") must conform to the requirements stated on the Competition Rules. Your Submissions will be scored by Judges from Hiring Partners (PT Bank Danamon Indonesia Tbk). Subject to compliance with the Competition Rules, Prizes, if any, will be awarded to participants with the best scores, based on the merits of the data science models submitted. See below for the complete Competition Rules.
 
 ### Competition-Specific Rules
 
