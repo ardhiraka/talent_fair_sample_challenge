@@ -1,6 +1,6 @@
 # Hacktiv8 Talent Fair Vol. 8 Challenge
 
-> Hacktiv8 Team in collaboration with To Be Announced
+> Hacktiv8 Team in collaboration with IYKRA
 ---
 
 _Archieve of previous Talent Fair can be found in [legacy](https://github.com/ardhiraka/talent_fair_sample_challenge/tree/main/legacy) folder._
@@ -131,7 +131,7 @@ Submit your **work, deck, AND elevator pitch** via this [link](https://bit.ly/su
 
 ### Challenge Rubrics
 
-The rubrics below are used to assess To Be Announced challenges.
+The rubrics below are used to assess the challenges.
 
 **Main Rubrics**
 
